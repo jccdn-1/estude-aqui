@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jogar</title>
+  <link rel="stylesheet" href="assets/css/game.css"/>
+</head>
+<body>
+
+  <main class="tela-principal">
+
+    <section class="conteudos">
+
+      <h1>Quiz</h1>
+
+      <article class="centro" id="instrucoes">
+        Leia a questão e clique na resposta certa
+      </article>
+  
+      <article class="questoes">
+  
+        <header class="questao">
+          <span class="numQuestao"></span>
+          <h2 class="pergunta"></h2>
+        </header>
+  
+          <div class="corpo">
+            <ol type="A" id="alternativas">
+              <li class="respostas" id="a" value="1A" onclick="verificarSeAcertou(this, this)"></li>
+              <li class="respostas" id="b" value="1B" onclick="verificarSeAcertou(this, this)"></li>
+              <li class="respostas" id="c" value="1C" onclick="verificarSeAcertou(this, this)"></li>
+            </ol>
+          </div>
+
+      </article>
+  
+      <article id="aviso">Questão <span id="numero"></span> de <span id="total"></span></article>
+
+    </section>
+
+  </main>
+
+  <script src="assets/js/quiz.js"></script>
+  
+</body>
+</html>
